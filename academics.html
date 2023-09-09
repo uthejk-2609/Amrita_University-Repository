@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #bb005dfd;
+        }
+
+        .nav-container {
+            float: right; /* Float the navigation to the right */
+            margin-top: 20px; /* Adjust the top margin for spacing */
+            font-size: 20px; /* Increase the font size */
+        }
+
+        .nav-container ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-container li {
+            display: inline;
+            margin-left: 20px; /* Add margin to space out the links */
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+        }
+
+        header {
+            background-color: #bb005dfd;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .departments {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .departments h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .departments ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .departments li {
+            margin-bottom: 10px;
+        }
+
+        .departments a {
+            display: block;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #bb005dfd;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .departments a:hover {
+            background-color: #bb005dfd;
+            color: #fff;
+        }
+
+        .department {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .department h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .department ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .department li {
+            margin-bottom: 10px;
+        }
+
+        .department a {
+            display: block;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #bb005dfd;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .department a:hover {
+            background-color: #bb005dfd;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #bb005dfd;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+    <title>Course List</title>
+</head>
+<body>
+    <header>
+        <img src="logo1.png" alt="Amrita College Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="departments">
+        <h2>Departments</h2>
+        <ul>
+            <li><a href="#arts">Arts</a></li>
+            <li><a href="#science">Science</a></li>
+            <li><a href="#commerce">Commerce</a></li>
+            <!-- Add more departments here -->
+        </ul>
+    </section>
+
+    <section class="department" id="arts">
+        <h2>Arts</h2>
+        <ul>
+            <li><a href="arts-BA.html">BA (English Language and Literature)</a></li>
+            <li><a href="arts-visual-media.html">Visual Media</a></li>
+            <!-- Add more courses here -->
+        </ul>
+    </section>
+
+    <section class="department" id="science">
+        <h2>Science</h2>
+        <ul>
+            <li><a href="science-artificial-intelligence.html">Artificial Intelligence Engineering</a></li>
+            <li><a href="science-computer.html">Computer Science Engineering</a></li>
+            <li><a href="science-electronics.html">Electronics And Computer Engineering</a></li>
+            <!-- Add more courses here -->
+        </ul>
+    </section>
+
+    <section class="department" id="commerce">
+        <h2>Commerce</h2>
+        <ul>
+            <li><a href="commerce-bba.html">Bachelor of Business Administration</a></li>
+            <li><a href="commerce-mba.html">Bachelor of Management Administration</a></li>
+            <!-- Add more courses here -->
+        </ul>
+    </section>
+
+    <footer>
+        <!-- Include footer content -->
+    </footer>
+</body>
+</html>

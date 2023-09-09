@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>University Registration</title>
+    <style>
+        /* Set a fixed width for the form container */
+        .registration-form {
+            width: 400px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style for labels and inputs */
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            opacity: 0.9; /* Increased opacity */
+            transition: opacity 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            opacity: 1;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Set your desired background color */
+            color: #bb005dfd;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+        }
+        
+        /* Add specific styles for your gallery */
+        .gallery {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center; 
+        align-items: center; 
+        }
+
+        .gallery h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-container img {
+            width: 300px; /* Set a fixed width */
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Preserve aspect ratio and cover the container */
+            transition: transform 0.5s ease-in-out, border-color 0.5s ease-in-out;
+            border: 2px solid transparent; /* Add a transparent border */
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1); /* Enlarge the image on hover */
+            cursor: pointer;
+            border-color: #bb005dfd; /* Add pink color to the border on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo1.png" alt="Amrita College Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Registration Form</h1>
+    <div class="registration-form">
+        <form action="https://formsubmit.co/uthejkaramalapudi@gmail.com" method="POST" id="registrationForm">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <label>
+                <input type="checkbox" id="accept_terms" name="accept_terms" required>
+                I accept the terms and conditions
+            </label>
+
+            <input type="submit" value="Register" disabled>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript to enable/disable the Register button based on the checkbox state
+        const checkbox = document.getElementById('accept_terms');
+        const registerButton = document.querySelector('input[type="submit"]');
+
+        checkbox.addEventListener('change', function () {
+            registerButton.disabled = !this.checked;
+            registerButton.style.opacity = this.checked ? 0.9 : 0.8;
+        });
+    </script>
+</body>
+</html>
